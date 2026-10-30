@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-
+import card from './card.jsx'
 
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Card from './card.jsx'
 
 function App() {
   let [counter ,  setCount]=useState(0);
@@ -32,6 +33,7 @@ function App() {
       <br/>
 
       <button onClick={decrease}>decrease the count</button>
+      <Card/>
     </>
   )
 }
